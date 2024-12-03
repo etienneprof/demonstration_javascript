@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!--
+    <input  type="text"
+            id="saisie"
+            value="toto"
+            onfocus="console.log('focus pris')"
+            onblur="console.log('focus perdu')"
+            onkeydown="console.log('appui sur une touche')"
+            onkeypress="console.log('maintien d\'une touche')"
+            onkeyup="console.log('touche relachee')"
+            onselect="console.log('select')"
+            onchange="console.log('change')"
+            oninput="console.log('input')"
+            >
+-->
+
+    <input  type="text"
+            id="saisie"
+            value="toto"
+            onfocus="console.log('focus pris')"
+            onblur="console.log('focus perdu')"
+            oninput="console.log('input')"
+    />
+
+    <input type="text" id="saisie_bonne_pratique" />
+
+    <button onclick="ajouterTexte()">Cliquez moi !</button>
+    <div id="conteneur" class="">
+
+    </div>
+
+    <p id="mon_texte">Un super texte</p>
+    <button onclick="changerCouleur()">Changer</button>
+
+    <button onclick="cacher()">Cacher</button>
+    <div id="mon_formulaire" class="cache">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis consequatur velit beatae fugiat doloremque eius in sint! Necessitatibus consequuntur quis illo, explicabo veritatis voluptatum in earum consectetur excepturi quasi reiciendis.
+        Ratione eos quos possimus blanditiis, recusandae minus deleniti iusto quibusdam mollitia doloribus neque hic dolorum inventore expedita animi a veritatis. Distinctio, delectus. Molestias, accusantium eligendi amet cum laudantium libero nisi?
+        Asperiores ab temporibus dolores perferendis repellendus architecto expedita nihil quaerat minus, aspernatur velit cupiditate molestias ad similique ullam odio harum ipsa. Eveniet ducimus tempora sunt est ipsam aspernatur, quibusdam perspiciatis.
+        Reprehenderit itaque veniam eum natus enim magnam ex illo impedit omnis molestiae fugit qui mollitia est quam, fugiat ut modi quaerat ea totam accusamus. Non qui ducimus culpa debitis odit.
+        Iure voluptatibus quae neque et perspiciatis amet, dolorem, officiis quidem molestias, nisi velit. Cupiditate saepe officiis modi accusamus sapiente impedit. Maiores asperiores dolore neque iste quia magni sapiente consequuntur vitae!
+        Eveniet quisquam non facere soluta repellendus molestias neque atque consequatur tempore saepe amet magnam aut, beatae fuga architecto magni? Ullam possimus corporis animi soluta, dolorum omnis velit eum nulla consequatur!
+        Voluptate nulla, culpa deleniti dolorem error qui ab perspiciatis distinctio ex excepturi iste, laudantium dolor cupiditate ea quisquam repudiandae doloremque nesciunt hic animi architecto facere! Corporis id voluptas fuga soluta?
+        Expedita vitae, minus ab dolorum eveniet deserunt unde, veniam impedit consequuntur aliquid, reprehenderit fuga voluptate ratione libero! Eaque sapiente provident dolores officia. Excepturi laboriosam nobis recusandae qui consectetur autem ducimus?
+        Esse id sit soluta totam consequatur velit sequi nam officia nemo, et rerum saepe voluptate commodi cumque consequuntur dolorem aliquam provident fuga? Unde facere commodi dolor cupiditate ratione, dignissimos obcaecati.
+        Autem voluptatem est reiciendis placeat, quaerat aliquid in nostrum voluptas, veniam tempora exercitationem quidem quos quas, nobis saepe delectus? Alias sint quasi ipsum numquam ex necessitatibus molestiae voluptas doloribus et.
+        Unde inventore ut mollitia! Sequi minima modi voluptatem consectetur blanditiis nesciunt voluptatibus libero iusto perferendis dolores dolore in fuga quod nemo repellendus, nihil aspernatur quae ad rem itaque. Quas, vero.
+        Corrupti iusto libero consequatur atque explicabo odio provident enim deleniti deserunt quidem, placeat praesentium! Tenetur, vel inventore! Tempora porro repellat illum sequi nulla, laborum saepe, eius natus doloremque enim aliquam.
+        Voluptas, doloremque ab laudantium neque quae sit tempora ipsum totam nemo pariatur delectus libero. Et amet itaque natus consequatur voluptas alias deserunt voluptates provident, expedita dicta error labore omnis eius.
+        Provident saepe reiciendis vitae doloribus praesentium placeat cum quos facere deleniti hic, voluptas accusantium nisi tenetur eos quibusdam sit officia porro inventore rerum. Eos ullam explicabo aut suscipit! Rem, animi!
+        Sed, dicta modi soluta alias, qui obcaecati nam expedita similique eligendi culpa tempore! Itaque inventore, blanditiis quos necessitatibus ipsam, corporis expedita distinctio atque accusamus, amet assumenda quasi exercitationem maiores quibusdam.
+        Odio itaque magnam architecto distinctio, tenetur quibusdam illo dolor, consequatur explicabo dignissimos eaque ratione soluta ipsam minima corrupti incidunt quia commodi at, voluptatibus optio laboriosam. Rerum natus pariatur alias vero!
+        Voluptas quis voluptatibus deleniti temporibus quidem? Aliquid distinctio nihil laudantium alias quod nemo veniam rerum, esse, quasi enim libero numquam quisquam magnam harum iure similique dignissimos. Cum pariatur optio aliquam.
+        Tempore, nisi similique. Repudiandae expedita quo odio mollitia facilis maiores maxime, non animi eum aut dolore quia vitae perspiciatis nemo nobis quis amet ipsa sapiente ipsum sunt, aliquid in accusantium.
+        Quaerat vitae perferendis ad, cumque officia, nemo adipisci hic veniam, excepturi saepe numquam placeat magnam ullam cupiditate. Quod iusto, vero expedita unde mollitia reiciendis odit nobis, vitae sed repellendus sapiente.
+        Natus ea dignissimos corrupti quod eveniet quae iste? Voluptatum officia soluta qui beatae iste, eum, enim maiores odio corporis itaque ducimus quis aut culpa aperiam accusantium eligendi a, perferendis laborum.
+    </div>
+
+    <button onclick="alert('Coucou tout le monde !')">Afficher une alerte</button>
+    <button onclick="afficherPrompt()">Afficher prompt</button>
+
+
+    <button onclick="location.href='http://www.google.com'">Rediriger</button>
+</body>
+</html>

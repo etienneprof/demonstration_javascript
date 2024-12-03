@@ -1,0 +1,5 @@
+[
+    {"nom" : "Skywalker", "prenom" : "Luke", "camp" : "Jedi"},
+    {"nom" : "Jin", "prenom" : "Qui Gon", "camp" : "Jedi"},
+    {"nom" : "Maul", "prenom" : "Dark", "camp" : "Sith"}
+]
